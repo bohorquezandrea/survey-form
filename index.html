@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <title>🚀 ¡Tu opinión importa!</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <h1 id="title">🚀 ¡Tu opinión importa! Ayúdanos a mejorar 🚀</h1>
+    <p id="description">¿Qué es lo que más te gusta y cómo podemos ser mejores? <br>
+Nos encantaría conocer tus pensamientos y sugerencias para ofrecerte una experiencia aún más valiosa.</p>
+
+<form id="survey-form">
+  <label for="name" id="name-label">Name</label>
+  <input required type="text" id="name" placeholder="Name" />
+  <label for="email" id="email-label">Email</label>
+  <input required type="email" id="email" placeholder="Email" />
+  <label for="number" id="number-label">Age</label>
+  <input required type="number" id="number" min="1" max="120" placeholder="age" />
+
+  <label for="rol">¿Qué describe mejor tu rol actual?</label> <br />
+
+<select name="rol" id="dropdown">
+  <option value="estudiante">Estudiante</option>
+    <option value="profesional">Profesional en transición</option>
+    <option value="desarrollador">Desarrollador</option>
+  <option value="otro">Otro</option>
+</select>
+<br>
+<h4>¿Nos recomendarías a un amigo?</h4>
+
+<label for="radio-yes">Sí</label>
+<input type="radio" id="radio-yes" name="recommend" value="yes" />
+
+<label for="radio-no">No</label>
+<input type="radio" id="radio-no" name="recommend" value="no" />
+
+<label for="radio-not-sure">No lo sé</label>
+<input type="radio" id="radio-not-sure" name="recommend" value="not-sure" />
+
+
+
+<label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+        
+       
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="improvement" value="frontend"> Front-end Projects</label> <br>
+            <label><input type="checkbox" name="improvement" value="backend"> Back-end Projects</label> <br>
+            <label><input type="checkbox" name="improvement" value="data"> Data Visualization</label> <br>
+            <label><input type="checkbox" name="improvement" value="challenges"> Challenges</label> <br>
+            <label><input type="checkbox" name="improvement" value="videos"> Videos</label> <br>
+            <label><input type="checkbox" name="improvement" value="city-meetups"> City Meetups</label> <br>
+            <label><input type="checkbox" name="improvement" value="additional-courses"> Additional Courses</label>
+        </div>
+
+     
+        <button type="submit" id="submit">Submit</button>
+
+</form>
+</body>
+</html>
